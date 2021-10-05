@@ -2,18 +2,17 @@
 
 ## Setup
 
-Copy .env.dist to .env and adjust the variables according to your server setup
-
-TBD
-
-## Webserver configuration
-
-The config is based on the release tarball folder structure:
-
+The setup is based on the release tarball folder structure:
 - /path/to/ui: Document-Root, containing the gui
 - /path/to/core: Folder containing the core source
 
-### nginx
+### Config
+
+Copy `/path/to/core/.env.dist` to `/path/to/core/.env` and adjust the variables according to your server setup.
+
+### Webserver configuration
+
+#### nginx
 
 ```
 root /path/to/ui;
@@ -34,10 +33,10 @@ location @nested {
 }
 ```
 
-## Add a catalog
+### Add a catalog
 
 uxmp organizes the music library in so called `catalogs`. To start over, simply
-use the cli tool to add a catalog.
+use the cli tool to add a catalog. The cli tool is located in `/path/to/core/bin`.
 
 ```shell
 ./bin/cli catalog:add /path/to/music/library
@@ -51,3 +50,8 @@ and the id of the catalog:
 ```shell
 ./bin/cli catalog:update <catalogId>
 ```
+
+## Repositories
+
+- [Core (API)](https://github.com/uxmp/core)
+- [Gui](https://github.com/uxmp/ui)
