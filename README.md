@@ -33,7 +33,13 @@ location @nested {
 }
 ```
 
-### Add a catalog
+### Database-Setup
+
+```shell
+cd /path/to/core && ./vendor/bin/doctrine orm:schema-tool:update --force
+```
+
+### Add a music catalog
 
 uxmp organizes the music library in so called `catalogs`. To start over, simply
 use the cli tool to add a catalog. The cli tool is located in `/path/to/core/bin`.
