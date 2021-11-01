@@ -1,14 +1,15 @@
 # uxmp - ux Music Player
 
+## Repositories
+
+- [Core (API)](https://github.com/uxmp/core)
+- [UI](https://github.com/uxmp/ui)
+
 ## Setup
 
 The setup is based on the release tarball folder structure:
 - /path/to/ui: Document-Root, containing the gui
 - /path/to/core: Folder containing the core source
-
-### Config
-
-Copy `/path/to/core/.env.dist` to `/path/to/core/.env` and adjust the variables according to your server setup.
 
 ### Webserver configuration
 
@@ -31,6 +32,16 @@ location /api/ {
 location @nested {
         rewrite /api/(.*)$ /api/index.php?/$1 last;
 }
+```
+
+### Config
+
+Copy `/path/to/core/.env.dist` to `/path/to/core/.env` and adjust the variables according to your server setup.
+
+### Bootstrap
+
+```shell
+cd /path/to/core && ./bin/cli setup:bootstrap
 ```
 
 ### Database-Setup
@@ -56,8 +67,3 @@ and the id of the catalog:
 ```shell
 ./bin/cli catalog:update <catalogId>
 ```
-
-## Repositories
-
-- [Core (API)](https://github.com/uxmp/core)
-- [Gui](https://github.com/uxmp/ui)
