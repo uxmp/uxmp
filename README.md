@@ -1,5 +1,7 @@
 # uxmp - ux Music Player
 
+Play your music in a browser.
+
 ## Repositories
 
 - [Core (API)](https://github.com/uxmp/core)
