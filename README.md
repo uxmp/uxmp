@@ -69,3 +69,13 @@ and the id of the catalog:
 ```shell
 ./bin/cli catalog:update <catalogId>
 ```
+
+### Contact
+
+#### IRC
+
+Visit #uxmp on [QuakeNet](https://www.quakenet.org/)
+
+#### Mail
+
+uxmp at usox dot org
