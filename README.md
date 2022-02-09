@@ -5,7 +5,7 @@ Play your music in a browser.
 ## Installation & Upgrading
 
 - [Installation documentation](https://github.com/uxmp/uxmp/wiki/Installation)
-- [Upgrading documentation](https://github.com/uxmp/uxmp/wiki/Installation)
+- [Upgrading documentation](https://github.com/uxmp/uxmp/wiki/Upgrading)
 
 ## Repositories
 
