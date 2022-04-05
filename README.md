@@ -14,9 +14,9 @@ Play your music in a browser.
 
 ### Contact
 
-#### IRC
+#### Chat
 
-Visit #uxmp on [QuakeNet](https://www.quakenet.org/)
+Visit us on Matrix: #uxmp:chat.wolvnet.de
 
 #### Mail
 
